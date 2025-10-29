@@ -35,17 +35,18 @@ body {
 }
 
 .button {
-    padding: 10px 20px;
-    border: none;
-    background-color: $text-color;
-    color: white;
-    cursor: pointer;
-    border-radius: 6px;
+    @include button-styles($font-color,$text-color);
+    // padding: 10px 20px;
+    // border: none;
+    // background-color: $text-color;
+    // color: $font-color;
+    // cursor: pointer;
+    // border-radius: 6px;
 }
 
 .primary-button {
     background: #4CAF4F;
-    color: #fff;
+    color: $font-color;
 }
 
 .secondary-button {
@@ -77,6 +78,9 @@ body {
     color: #717171;
 }
 
+
+// Client Section
+
 .client-container{
     padding-top: 40px;
 }
@@ -101,6 +105,8 @@ body {
 .general-desc{
   margin-top: 16px;
 }
+
+// benefits Section
 
 .benefits-heading{
     width: 548px;
@@ -136,6 +142,8 @@ body {
     margin-top: 8px;
 }
 
+//  info container
+
 .info-container{
     display: flex;
     justify-content: space-evenly;
@@ -151,10 +159,56 @@ body {
     margin-top: 32px;
     border: none;
     background-color: $button-theme;
-    color: white;
+    color: $font-color;
     cursor: pointer;
     border-radius: 6px;
 }
+
+// stats section
+
+.stats-section{
+    background-color: #F5F7FA;
+}
+
+.stats-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-left-container{
+    margin: 84px 0px;
+}
+
+.stats-left-heading{
+    width: 408px;
+    font-size: 36px;
+    overflow-wrap: break-word;
+    font-weight: bold;
+}
+
+.stats-left-pare{
+    margin-top: 8px;
+}
+
+.richText{
+    color: $button-theme;
+}
+
+.stats-right-container{
+    margin: 64px;
+    display: flex;
+    width: 540px;
+    flex-wrap: wrap;
+    gap: 30px 40px;
+}
+
+.stats-card{
+    display: flex;
+    justify-content: space-around;
+    width: 240px;
+}
+
+// care section
 
 .care-desc {
     width: 630px;
@@ -192,6 +246,8 @@ body {
 }
 
 
+// Demo section
+
 .demo-heading{
     font-size: 64px;
     color: $text-color;
@@ -200,6 +256,9 @@ body {
     max-width: 880px;
     text-align: center;
 }
+
+
+// footer section 
 
 .footer-section{
     background-color: #263238;
@@ -218,7 +277,7 @@ body {
 }
 
 .footer-left-para{
-    color: white;
+    color: $font-color;
 }
 
 .footer-social-list{
@@ -239,7 +298,7 @@ body {
 
 .footer-vertical-head{
     font-size: 20px;
-    color: white;
+    color: $font-color;
 }
 
 .footer-vertical-list-container{
@@ -250,7 +309,7 @@ body {
 .footer-vertical-list{
     padding-bottom: 12px;
     font-size: 14px;
-    color: white;
+    color: $font-color;
 }
 
 .footer-form{
@@ -260,7 +319,7 @@ body {
 .form-input{
     padding: 9px 18px;
     background-color: #a7a9af;
-    color: white;
+    color: $font-color;
     border: none;
     border-radius: 5px;
 }
